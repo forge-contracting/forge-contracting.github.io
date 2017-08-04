@@ -3933,8 +3933,6 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-   color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
@@ -4360,7 +4358,7 @@ tbody.collapse.show {
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-toggler {
-   color: #fed136;
+  color: white;
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover,
@@ -5829,6 +5827,7 @@ button.close {
   content: "";
   border-width: 10px;
 }
+carosa
 
 .carousel {
   position: relative;

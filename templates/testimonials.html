@@ -1,0 +1,73 @@
+ <div
+            class="demo__slides"
+            bc-flickity="{{ flickityOptions }}"
+            bc-flickity-id="demoId3"
+        >
+
+            <figure class="demo__slide" data-ng-repeat="slide in slides track by $index">
+                <img data-ng-src="{{ ::slide }}" alt="" />
+            </figure>
+
+        </div>
+<div class="wow fadeIn">
+<!-- HERO AREA -->
+<div class="jumbotron" id="#hero" data-stellar-background-ratio="0.5">
+        <h1 class="display-3 wow bounceInLeft"><span class="striking">Our Work</span></h1>
+        <p class="lead wow bounceInRight">Quality Without Compromise </p>
+        <hr class="my-4">
+
+</div>
+
+</div>
+
+<!-- testmonials -->
+<section class="testimonials wow bounceIn" id="testimonials">
+
+    <div class="section-header">
+        <div>
+            <h1>What our clients say</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 testimonials-content">
+
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <img class="testimonial-avatar"
+                             src="img/client1.jpg">
+                        <q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris
+                            ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
+                        <span class="testimonial-author">Joe Smith, CEO of Cubix</span>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <img class="testimonial-avatar"
+                             src="img/client2.jpg">
+                        <q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris
+                            ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
+                        <span class="testimonial-author">Lisa Jones, Freelance Web Developer</span>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <img class="testimonial-avatar"
+                             src="img/client3.jpg">
+                        <q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris
+                            ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
+                        <span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div  ui-view></div>

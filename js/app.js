@@ -10,24 +10,45 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     // HOME STATES AND NESTED VIEWS ========================================
     $stateProvider.state('home', {
         url: '/home',
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/home.html',
+        controller: function() {
+            $('.testimonials .testimonials-content').flickity({
+                wrapAround: true,
+                pageDots: true,
+                prevNextButtons: false,
+                autoPlay: 5000
+            });
+        }
     })
 
 
-     $stateProvider.state('about', {
-        url: '/about',
-       templateUrl: 'templates/about.html'
+     $stateProvider.state('contact', {
+        url: '/contact',
+       templateUrl: 'templates/contact.html'
 
     })
 
-   $stateProvider.state('brandedexamples', {
-        url: '/brandedexamples',
-        templateUrl: 'templates/brandedexamples.html'
+   $stateProvider.state('ourstory', {
+        url: '/ourstory',
+        templateUrl: 'templates/ourstory.html'
     })
 
-        $stateProvider.state('videoproduction', {
-        url: '/videoproduction',
-        templateUrl: 'templates/videoproduction.html'
+        $stateProvider.state('services', {
+        url: '/services',
+        templateUrl: 'templates/services.html'
+    });        
+
+        $stateProvider.state('testimonials', {
+        url: '/testimonials',
+        templateUrl: 'templates/testimonials.html',
+        controller: function() {
+            $('.testimonials .testimonials-content').flickity({
+                wrapAround: true,
+                pageDots: true,
+                prevNextButtons: false,
+                autoPlay: 5000
+            });
+        }
     });
 
     $urlRouterProvider.otherwise('/home');     
