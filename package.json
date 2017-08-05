@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/forge-contracting/forge-contracting.github.io/issues"
   },
-  "homepage": "https://github.com/forge-contracting/forge-contracting.github.io#home"
+  "homepage": "https://forgecontracting.ca/#home",
+  "deploy": "ng build --prod && angular-cli-ghpages --branch master"
 }
